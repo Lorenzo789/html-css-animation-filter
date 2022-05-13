@@ -162,27 +162,74 @@
 
 /* Esercizio-13 */
 .ex-13-top-white{
-    animation: move3 3s linear infinite;
+    animation: move3 5s linear infinite;
 }
 
 @keyframes move3 {
     0%{
         left: 10%;
-        top: -10;
+        top: -10px;
     }
 
-    30%{
+    20%{
         left: calc(100% - 30px);
-        top: -10;
+        top: -10px;
     }
 
-    45%{
+    40%{
         left: calc(100% - 30px);
         top: 100%;
     }
 
     60%{
-        left: 0;
+        left: calc(0% - 20px);
         top: 100%;
     }
+
+    80%{
+        top: -10px;
+        left: -20px;
+    }
+
+    100%{
+        top: -10px;
+        left: 10%;
+    }
 }
+
+.ex-13-bottom-white{
+    animation: move4 5s linear infinite;
+}
+
+@keyframes move4 {
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+
+    20%{
+       right: 80%;
+       bottom: -10px;
+    }
+
+    40%{
+        right: 80%;
+        bottom: 100%;
+    }
+
+    60%{
+        bottom: 100%;
+        right: 0;
+    }
+
+    80%{
+        right: -10px;
+        bottom: -10px;
+    }
+
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
+/* Esercizio-13 */
