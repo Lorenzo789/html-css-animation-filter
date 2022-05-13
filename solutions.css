@@ -105,36 +105,84 @@
     }
 
     100%{
-        transform: rotate(359deg);
+        transform: rotate(360deg);
     }
 }
 /* Esercizio-10 */
 
 /* Esercizio-11 */
-.ex-11-icon{
+.ex-11-icon:hover{
     animation: rotation 2s linear infinite;
 }
 
 @keyframes rotation {
-    0%{
-        transform: rotate(0deg);
-    }
-
-    25%{
-        transform: rotate(90deg);
-    }
-
-    50%{
-        transform: rotate(180deg);
-    }
-
     75%{
         transform: rotate(270deg);
-    }
-
-    100%{
-        transform: rotate(0deg);
     }
 }
 /* Esercizio-11 */
 
+/* Esercizio-12 */
+.ex-12-top-white{
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0%{
+        left: 10%;
+    }
+
+    50%{
+        left: calc(100% - 60px);
+    }
+
+    100%{
+        left: 10%
+    }
+}
+
+.ex-12-bottom-white{
+    animation: move2 2s linear infinite;
+}
+
+@keyframes move2 {
+    0%{
+        right: 20%;
+    }
+
+    50%{
+        right: calc(100% - 60px);
+    }
+
+    100%{
+        right: 20%;
+    }
+}
+/* Esercizio-12 */
+
+/* Esercizio-13 */
+.ex-13-top-white{
+    animation: move3 3s linear infinite;
+}
+
+@keyframes move3 {
+    0%{
+        left: 10%;
+        top: -10;
+    }
+
+    30%{
+        left: calc(100% - 30px);
+        top: -10;
+    }
+
+    45%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+
+    60%{
+        left: 0;
+        top: 100%;
+    }
+}
